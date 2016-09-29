@@ -1,0 +1,25 @@
+<mvc:View
+  controllerName="sap.ui.app.controller.HelloPanel"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Panel
+    headerText="Hello {/recipient/name}"
+    class="sapUiResponsiveMargin"
+    width="auto">
+    <content>
+      <Input
+        value="{/recipient/name}"
+        valueLiveUpdate="true"
+        width="60%"/>
+      <Button
+        text="{i18n>showHellowButtonText}"
+        press="onShowHello"
+        class="sapUiSmallMarginEnd"/>
+      <Button
+        icon="sap-icon://world"
+        text="{i18n>openDialogButtonText}"
+        press="onOpenDialog"/>
+    </content>
+  </Panel>
+
+</mvc:View>
