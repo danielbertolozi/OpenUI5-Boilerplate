@@ -46,6 +46,25 @@
         "uri": "assets/stylesheets/app.css"
       }
       ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "sap.ui.app.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [{
+        "pattern": "",
+        "name": "main",
+        "target": "main"
+      }],
+      "targets": {
+        "main": {
+          "viewName": "Main"
+        }
+      }
     }
   }
 }

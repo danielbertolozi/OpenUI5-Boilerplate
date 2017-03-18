@@ -3,13 +3,6 @@
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc"
   displayBlock="true">
-  <App>
-    <pages>
-      <Page title="{i18n>homePageTitle}">
-        <content>
-          <mvc:XMLView viewName="sap.ui.app.view.HelloPanel"/>
-        </content>
-      </Page>
-    </pages>
+  <App class="app" id="app">
   </App>
 </mvc:View>

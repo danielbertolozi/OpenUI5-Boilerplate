@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="sap.ui.app.controller.Main"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:table="sap.ui.table">
+	<Panel
+		class="sapUiResponsiveMargin"
+		width="auto">
+		<content>
+			<VBox>
+				<Button 
+					text="Add"
+					type="Transparent"
+					icon="sap-icon://add"
+					press="onAddButtonPress"/>
+				<Table
+					items="/chosenEmployees">
+					<columns>
+						<Column
+							name="Name"/>
+						<Column
+							name="Age"/>
+					</columns>
+				</Table>
+			</VBox>
+		</content>
+	</Panel>
+</mvc:View>
